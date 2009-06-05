@@ -34,3 +34,22 @@ applet_fu.run(
   '<img src="/no-java.png" />'
 );
 
+Compatibility:
+
+Applet-Fu has been tested on:
+-  Microsoft Internet Explorer 6/7/8 (Windows);
+-  Firefox 2/3 (Windows, Mac OS X, Linux);
+-  Safari 3 (Mac OS X); Google Chrome (Windows); and
+-  Opera (Windows, Mac OS X, Linux) using Java 1.4/1.5/1.6.
+
+Browsers, operating systems, and the Java plugin each are offered in
+numerous incremental revisions ("minor revisions"). As such, it is
+impossible to guarantee the effectiveness of this method with every
+combination of minor revision. 
+
+Copyright (c) 2008, Metamolecular, LLC
+All rights reserved.
+
+http://github.com/rapodaca/applet-fu/tree/master
+info@metamolecular.com
+

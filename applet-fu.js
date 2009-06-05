@@ -4,7 +4,7 @@
  * Copyright (c) 2008, Metamolecular, LLC
  * All rights reserved.
  *
- * http://metamolecular.com
+ * http://github.com/rapodaca/applet-fu/tree/master
  * info@metamolecular.com
  *
  * Redistribution and use in source and binary forms, with or without modification,
