@@ -34,24 +34,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-/*
- * Applet-Fu solves three important problems when deploying Java applets in
- * hetergeneous environments:
- *
- * (1) Eliminates "Click to Activate" message in Internet Explorer.
- *     See: http://en.wikipedia.org/wiki/Eolas
- * 
- * (2) Enables the minimum JRE version required to run an applet to be set, and
- *     uses the browser's own built-in mechanism for installing plugins to
- *     install the correct JVM, if needed.
- *
- * (3) Uses the standards-compliant <object> tag, which replaces the deprecated
- *     <applet> tag in HTML 4.
- *
- * Usage: applet_fu.run({attr1:val1, attr2:val2, ...},
- *                       {param1:val1, param2:val2, ...},
- *                       minimumVersion, fallbackContent);
- */
 var applet_fu = {
   run: function(attributes, parameters, minimumVersion, fallbackContent){    
     if (applet_fu.isIE()){
