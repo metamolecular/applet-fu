@@ -1,16 +1,36 @@
-Applet-Fu solves three important problems when deploying Java applets in
+Applet-Fu solves four important problems when deploying Java applets in
 hetergeneous environments:
 
 (1) Eliminates "Click to Activate" message in Internet Explorer.
     See: http://en.wikipedia.org/wiki/Eolas
  
-(2) Enables the minimum JRE version required to run an applet to be set, and
+(2) Enables the specification of the minimum Java plugin version, and
     uses the browser's own built-in mechanism for installing plugins to
-    install the correct JVM, if needed.
+    install the correct one, if needed.
 
-(3) Uses the standards-compliant <object> tag, which replaces the deprecated
+(3) Enables fallback content to be displayed in the event that the Java plugin
+    is not functional.
+
+(4) Uses the standards-compliant <object> tag, which replaces the deprecated
     <applet> tag in HTML 4.
 
 Usage: applet_fu.run({attr1:val1, attr2:val2, ...},
                      {param1:val1, param2:val2, ...},
                      minimumVersion, fallbackContent);
+
+For example, to run an a 550x320 applet from the jar file 'myapplet.jar'
+using the class 'com.example.MyApplet' with a startup
+parameter 'foo=bar', a minimum JVM version of 1.4.2, and an image
+called 'no-java.png' as fallback content, use the following:
+
+applet_fu.run(
+  {'width':'550','height':'320'},
+  {
+    'archive':'myapplet.jar',
+    'code':'com/example/MyApplet.class',
+    'foo':'bar'
+  },
+  '1.4.2',
+  '<img src="/no-java.png" />'
+);
+
