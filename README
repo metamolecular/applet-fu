@@ -47,9 +47,7 @@ numerous incremental revisions ("minor revisions"). As such, it is
 impossible to guarantee the effectiveness of this method with every
 combination of minor revision. 
 
-Copyright (c) 2008, Metamolecular, LLC
-All rights reserved.
+If you find a problem with Applet-Fu, please consider submitting a bug
+report to:
 
-http://github.com/rapodaca/applet-fu/tree/master
-info@metamolecular.com
-
+http://github.com/rapodaca/applet-fu/issues
