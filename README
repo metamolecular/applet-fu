@@ -4,18 +4,17 @@ hetergeneous environments:
 (1) Eliminates "Click to Activate" message in Internet Explorer.
     See: http://en.wikipedia.org/wiki/Eolas
  
-(2) Enables the specification of the minimum Java plugin version, and
-    uses the browser's own built-in mechanism for installing plugins to
-    install the correct one, if needed.
+(2) Specifies minimum Java plugin version, and
+    uses the browser's own built-in mechanism for installing it if needed.
 
-(3) Enables fallback content to be displayed in the event that the Java plugin
-    is not functional.
+(3) Enables interactive fallback content to be displayed in the event that
+    the Java plugin is not functional.
 
-(4) Uses the standards-compliant <object> tag, which replaces the deprecated
+(4) Uses the <object> tag, which replaces the deprecated
     <applet> tag in HTML 4.
 
-Usage: applet_fu.run({attr1:val1, attr2:val2, ...},
-                     {param1:val1, param2:val2, ...},
+Usage: applet_fu.run({attribute1:value1, attribute2:value2, ...},
+                     {parameter1:value1, parameter2:value2, ...},
                      minimumVersion, fallbackContent);
 
 For example, to run an a 550x320 applet from the jar file 'myapplet.jar'
@@ -39,10 +38,12 @@ Compatibility:
 Applet-Fu has been tested on:
 -  Microsoft Internet Explorer 6/7/8 (Windows);
 -  Firefox 2/3 (Windows, Mac OS X, Linux);
--  Safari 3 (Mac OS X); Google Chrome (Windows); and
--  Opera (Windows, Mac OS X, Linux) using Java 1.4/1.5/1.6.
+-  Safari 3 (Mac OS X);
+-  Google Chrome (Windows);
+-  Opera 9 (Windows, Mac OS X, Linux);
+-  Java 1.4/1.5/1.6.
 
-Browsers, operating systems, and the Java plugin each are offered in
+Browsers, operating systems, and the Java plugin are each offered in
 numerous incremental revisions ("minor revisions"). As such, it is
 impossible to guarantee the effectiveness of this method with every
 combination of minor revision. 
