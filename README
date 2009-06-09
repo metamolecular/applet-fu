@@ -1,3 +1,9 @@
+If you've ever needed to deploy Java applets, you may have found the
+information on best practices scattered, inconsistent, and unreliable.
+Applet-Fu is a small JavaScript library that makes it easy to deploy
+applets by taking advantage of Web standards and features already
+supported by mainstream browsers.
+
 Applet-Fu solves four important problems when deploying Java applets in
 hetergeneous environments:
 
